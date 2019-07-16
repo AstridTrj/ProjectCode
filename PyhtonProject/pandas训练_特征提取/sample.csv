@@ -1,0 +1,8 @@
+user_id,activity_total_count,register_day
+22,xx,xx
+33,xx,xx
+656,xx,xx
+注：,,
+activity_total_count:表示总行为次数,,xx：表示每个特征对应的数值
+register_day：表示注册日期,,
+其它特征与上述格式相同,,
