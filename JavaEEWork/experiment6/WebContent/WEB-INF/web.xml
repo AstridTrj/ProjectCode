@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>experiment6</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>first</param-name>
+    <param-value>111111</param-value>
+  </context-param>
+  <context-param>
+    <param-name>second</param-name>
+    <param-value>222222</param-value>
+  </context-param>
+  <context-param>
+    <param-name>third</param-name>
+    <param-value>333333</param-value>
+  </context-param>
+  <servlet>
+    <servlet-name>Servlet1</servlet-name>
+    <servlet-class>test.Servlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet1</servlet-name>
+    <url-pattern>/Servlet1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>JDBCServlet</servlet-name>
+    <servlet-class>test.JDBCServlet</servlet-class>
+    <init-param>
+    	<param-name>driver</param-name>
+    	<param-value>com.mysql.cj.jdbc.Driver</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>url</param-name>
+    	<param-value>jdbc:mysql://localhost:3306/test?serverTimezone=UTC&amp;characterEncoding=utf-8</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>user</param-name>
+    	<param-value>root</param-value>
+    </init-param>
+    <init-param>
+    	<param-name>pwd</param-name>
+    	<param-value>crazy58134796</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>JDBCServlet</servlet-name>
+    <url-pattern>/JDBCServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
